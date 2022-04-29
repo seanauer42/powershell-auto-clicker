@@ -50,7 +50,7 @@ while($true)
 {
 	[W.POS]::SetCursorPos($x1, $y);
 	[W.U32]::mouse_event(6,0,0,0,0);
-	Start-Sleep -s 0.8;
+	Start-Sleep -s 1.3;
 	[W.POS]::SetCursorPos($x2, $y);
 	[W.U32]::mouse_event(6,0,0,0,0);
 	Start-Sleep -s 0.4;
