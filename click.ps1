@@ -11,7 +11,15 @@ Add-Type @"
 }
 "@
 
-$a = [tricks]::GetForegroundWindow()
+
+# This gets the foreground window as a variable and sets p equal to the process name
+DO {
+	$a = [tricks]::GetForegroundWindow()
+	$p = Get-Process | Where-Object { $_.mainWindowHandle -eq $a } | Select-Object processName | Out-String 
+	
+	#This will continue until powershell is deselected
+} while ($p | Select-String -Pattern "powershell")
+
 
 #left mouse clicks until the window loses focus
 while($true)
