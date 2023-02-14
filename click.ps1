@@ -27,7 +27,7 @@ while($true)
 	$b = [tricks]::GetForegroundWindow()
 	if ($b -eq $a) {
 		[W.U32]::mouse_event(6,0,0,0,0);
-		Start-Sleep -s 1.0;
+		Start-Sleep -s 0.6;
 	}
 	else {
 		break;
