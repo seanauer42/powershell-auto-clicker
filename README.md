@@ -7,4 +7,4 @@ There are 3 separate files to help you click through training. click.ps1 is a si
 I chose to rewrite these in powershell because powershell is preinstalled on Windows 10+ systems. You can copy and paste these into Notepad and save as [anything].ps1 to run it, you'll have to right click in the file explorer and Run with Powershell. 
 To make it stop, you can close the window or press ctrl+c on that window. 
 
-# Beware that trainging-clicker can be hard to close
+# Beware that training-clicker can be hard to close
